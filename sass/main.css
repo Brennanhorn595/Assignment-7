@@ -1,2 +1,11 @@
 ::backdrop    {background: rgb(14,0,255);
     background: linear-gradient(90deg, rgba(14,0,255,1) 100%, rgba(0,212,255,1) 63%);}
+body    {
+    background-color: aqua;
+    color: thistle;
+}
+@mix-in  transform($property)    {
+-webkit-transform:  $property;
+-ms-transformation: $property;
+transform:  $property;
+}
